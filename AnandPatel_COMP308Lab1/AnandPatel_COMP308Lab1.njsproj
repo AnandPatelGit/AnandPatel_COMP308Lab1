@@ -28,6 +28,12 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\controllers\index.server.controller.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\routes\index.server.routes.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="config\config.js">
       <SubType>Code</SubType>
     </Compile>
@@ -38,6 +44,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="server.js" />
+    <Content Include="app\views\anand_feedback.ejs">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="app\views\index.ejs">
       <SubType>Code</SubType>
     </Content>
