@@ -1,0 +1,9 @@
+{
+  "name": "anand-patel_comp308-lab1",
+  "version": "0.0.0",
+  "description": "AnandPatel_COMP308Lab1",
+  "main": "server.js",
+  "author": {
+    "name": "Anand Patel AK"
+  }
+}
