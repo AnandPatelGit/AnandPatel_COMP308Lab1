@@ -43,6 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
+    <Folder Include="app\controllers\" />
+    <Folder Include="app\models\" />
+    <Folder Include="app\views\" />
+    <Folder Include="app\routes\" />
     <Folder Include="config\" />
     <Folder Include="config\env\" />
     <Folder Include="public\" />
