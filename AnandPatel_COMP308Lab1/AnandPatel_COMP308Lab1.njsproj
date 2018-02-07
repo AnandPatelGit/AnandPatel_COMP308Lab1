@@ -34,6 +34,9 @@
     <Compile Include="config\env\development.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="config\express.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
