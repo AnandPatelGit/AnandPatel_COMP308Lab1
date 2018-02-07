@@ -43,6 +43,7 @@ module.exports = function () {
     app.engine('html', require('ejs').renderFile);
 
     // Load the 'index' routing file
+    //Load all the routing files here
     require('../app/routes/index.server.routes.js')(app);
 
     // Configure static file serving
