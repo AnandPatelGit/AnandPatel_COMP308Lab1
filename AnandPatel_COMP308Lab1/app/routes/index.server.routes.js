@@ -8,8 +8,10 @@ module.exports = function (app) {
     var index = require('../controllers/index.server.controller');
     
     //handle the routing of get and post request
-    app.get('/', res.render('index',
-        { title: 'Login Page' }));
+    app.get('/', function (req, res) {
+        res.render('index',
+            { title: 'Login Page' })
+    });
     //
     app.post('/', function (req, res) {
         //console.log("POST request - User name = " + req.body.username);
