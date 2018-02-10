@@ -19,10 +19,8 @@ exports.showFeedbackPage = function (req, res) {
         });
     }
     else {
-
         //redirect to the root
         res.redirect('/');
-
     }
     console.log("GET request - User name = " + session.username);
 };

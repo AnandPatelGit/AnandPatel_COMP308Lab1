@@ -6,6 +6,33 @@
     <title><%= title %></title>
 </head>
 <body>
-<input type="text" size="30" placeholder="Email" name="username" value="<%=username%>"/>
+    <form method="post">
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" size="30" placeholder="Enter your First Name" name="firstname" /></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" size="30" placeholder="Enter your Last Name" name="lastname" /></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" size="30" placeholder="Email" name="username" value="<%=username%>" /></td>
+            </tr>
+            <tr>
+                <td>Favourite Food:</td>
+                <td><input type="text" size="30" placeholder="favoriteFood" name="favouriteFood" /></td>
+            </tr>
+            <tr>
+                <td>Comments:</td>
+                <td><textarea rows="4" cols="50" type="text" placeholder="Comments" name="comments"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" name="submit"></td>
+            </tr>
+        </table>
+        </form>
 </body>
 </html>

@@ -6,6 +6,7 @@
 module.exports = function (app) {
     //load the controllers in memory
     var index = require('../controllers/index.server.controller');
+    var display = require('../controllers/endgreetings.server.controller');
     
     //handle the routing of get and post request
     app.get('/', function (req, res) {
@@ -15,8 +16,11 @@ module.exports = function (app) {
     //
     app.post('/', function (req, res) {
         //console.log("POST request - User name = " + req.body.username);
-        index.showFeedbackPage(req, res);
-        
+        index.showFeedbackPage(req, res); 
     });
 
+    app.post('/endgreetings', function (req, res) {
+        //console.log("POST request - User name = " + req.body.username);
+        display.showEndGreetings(req, res);
+    });
 };
