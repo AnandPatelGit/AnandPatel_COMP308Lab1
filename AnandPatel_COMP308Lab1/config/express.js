@@ -11,7 +11,7 @@ const session = require('express-session');
 module.exports = function () {
     // Create a new Express application instance
     const app = express();
-
+ 
     // Use the 'NDOE_ENV' variable to activate the 'morgan' logger or 'compress' middleware
     if (process.env.NODE_ENV === 'development') {
         app.use(morgan('dev'));
@@ -45,7 +45,7 @@ module.exports = function () {
     // Load the 'index' routing file
     //Load all the routing files here
     require('../app/routes/index.server.routes.js')(app);
-
+    require('../app/routes/anand_feedback.server.routes.js')(app);
     // Configure static file serving
     app.use(express.static('./public'));
 

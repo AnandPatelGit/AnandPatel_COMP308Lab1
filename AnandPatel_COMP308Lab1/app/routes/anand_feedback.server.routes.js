@@ -5,7 +5,6 @@
 
 module.exports = function (app) {
     //load the controllers in memory
-    var index = require('../controllers/index.server.controller');
     var display = require('../controllers/anand_feedback.server.controller');
     //handle the routing of get and post request
     app.get('/', function (req, res) {
@@ -15,7 +14,7 @@ module.exports = function (app) {
     //
     app.post('/', function (req, res) {
         //console.log("POST request - User name = " + req.body.username);
-        index.showFeedbackPage(req, res); 
+        display.render(req, res);
     });
-    
+    app.post('/thankyou', display.render);
 };
