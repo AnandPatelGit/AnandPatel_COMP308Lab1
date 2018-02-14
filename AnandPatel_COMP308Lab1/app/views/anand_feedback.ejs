@@ -4,11 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <title><%= title %></title>
+    <hr>
+    <!--<link rel="stylesheet" href="../css/StyleSheet.css">-->
+    <!-- Compiled and minified CSS -->
+  <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
+
+    <!-- Compiled and minified JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body>
-    <form method="post" action="http://localhost:3000/thankyou">
+<body class="w3-panel w3-border">
+    <h2><%= title %></h2>
+    <form method="post" action="http://localhost:3000/thankyou" >
         <table>
             <tr>
+
                 <td>First Name:</td>
                 <td><input type="text" size="30" placeholder="Enter your First Name" name="firstname" /></td>
             </tr>
@@ -26,13 +36,14 @@
             </tr>
             <tr>
                 <td>Comments:</td>
-                <td><textarea rows="4" cols="50" type="text" placeholder="Comments" name="comments"></textarea></td>
+                <td><textarea rows="4" cols="31" type="text" placeholder="Comments" name="comments"></textarea></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Submit" name="submitForm"></td>
+                <td><input type="submit" class="w3-button w3-green" value="Submit" name="submitForm"></div></td>
             </tr>
         </table>
         </form>
+    <hr />
 </body>
 </html>

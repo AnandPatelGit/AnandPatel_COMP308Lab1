@@ -60,6 +60,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />
+    <Content Include="public\css\StyleSheet.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>

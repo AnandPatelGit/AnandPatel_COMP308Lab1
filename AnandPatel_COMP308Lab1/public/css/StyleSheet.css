@@ -1,0 +1,20 @@
+﻿body {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: inherit;
+    width: inherit;
+    height: inherit;
+    text-decoration-style:dotted;
+    font-family:Arial;
+
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: double;
+    color:black;
+    padding: initial;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left:150px;   
+}
